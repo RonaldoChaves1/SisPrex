@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.superquinto.sisprex"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PesquisaActivity"
+            android:label="@string/title_activity_pesquisa" >
+        </activity>
+        <activity
+            android:name=".DetalhesActivity"
+            android:label="@string/title_activity_detalhes" >
+        </activity>
+        <activity
+            android:name=".EdicaoActivity"
+            android:label="@string/title_activity_edicao" >
+        </activity>
+        <activity
+            android:name=".CargaActivity"
+            android:label="@string/title_activity_carga" >
+        </activity>
+    </application>
+
+</manifest>
